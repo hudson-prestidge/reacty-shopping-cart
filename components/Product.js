@@ -7,9 +7,11 @@ export default class Product extends React.Component {
   }
 
   addToCart () {
-    this.props.store.dispatch(
-      { type: 'ADD_TO_CART', product: this }
-    )
+    if(this.props.state.stocks[this.props.name] > 0){
+      this.props.store.dispatch(
+        { type: 'ADD_TO_CART', product: this }
+      )
+    }
   }
 
   render () {
