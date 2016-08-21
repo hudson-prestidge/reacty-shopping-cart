@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
 import App from './components/App.js'
+import Product from './components/product'
 import reducer from './reducer'
 
 const store = createStore(reducer)
