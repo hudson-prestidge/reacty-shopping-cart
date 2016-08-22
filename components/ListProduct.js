@@ -15,7 +15,7 @@ export default class ListProduct extends React.Component {
   render () {
     return (
       <div>
-        <h3> I am a {this.props.name}! </h3>
+        <h3> {this.props.name} </h3>
         <button onClick={this.RemoveFromCart}>Remove from cart</button>
       </div>
     )
