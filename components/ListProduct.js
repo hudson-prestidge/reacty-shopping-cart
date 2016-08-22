@@ -16,7 +16,7 @@ export default class ListProduct extends React.Component {
     return (
       <div>
         <h3> {this.props.name} </h3>
-        <button onClick={this.RemoveFromCart}>Remove from cart</button>
+        <button onClick={this.RemoveFromCart}>Remove from cart</button> Price: ${this.props.price}
       </div>
     )
   }
